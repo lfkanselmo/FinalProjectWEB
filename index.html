@@ -1,155 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="media/icon/light-icon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Anselmo's Movies</title>
-  </head>
 
-  <body class="font-serif bgr-black">
-    <!-- Header -->
-    <header class="header">
-      <!-- NavBar -->
-      <nav
-        class="navbar bgr-black navbar-expand-lg bg-body-tertiary fs-5"
-        data-bs-theme="dark"
-      >
-        <div class="row container-fluid d-flex justify-content-between">
-          <!-- Logo img -->
-          <div class="col-3 d-flex justify-content-start align-items-center">
-            <a class="navbar-brand" href="#"
-              ><img class="img-logo" src="media/logo/white-logo.png" alt=""
-            /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Menu -->
-          <div
-            class="col-3 collapse navbar-collapse d-flex justify-content-center justify-content-sd-end text-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Movies</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Series</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Raitings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Watchlist</a>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="media/icon/light-icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Anselmo's Movies</title>
+</head>
+
+<body class="font-serif bgr-black">
+  <!-- Header -->
+  <header class="header mb-100">
+    <div class="container mb-100">
+      <!-- Navbar -->
+      <nav class="row navbar navbar-expand-lg text-white justify-content-between align-items-center pt-4">
+        <!-- Logo -->
+        <a href="#" class="col-auto">
+          <img class="img-logo" src="media/logo/white-logo.png" alt="logo" />
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class=" col-auto collapse navbar-collapse justify-content-end text-uppercase" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-reset" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#series">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#movies">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#">Directors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-reset" href="#">Soon</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
-      <div class="row bg-black d-flex flex-row">
-        <!-- Left Text -->
-        <div
-          class="col-4 text-white text-start px-5 d-flex flex-column justify-content-center"
-        >
-          <h1 class="fts-50">Interstellar</h1>
-          <p>
-            The adventures of a group of explorers who make use of a newly
-            discovered wormhole to surpass the limitations on human space travel
-            and conquer the vast distances involved in an interstellar voyage.
+      <!-- Description -->
+      <div class="row text-white">
+        <div class="col-6 d-flex flex-column justify-content-center py-5">
+          <!-- Tittle -->
+          <h1><span class="text-warning">Anselmo's</span> <br> Movies and Series</h1>
+          <!-- Collapsed info -->
+          <p class="d-inline-flex gap-1">
+            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              About page
+            </a>
           </p>
-        </div>
-
-        <!-- Img -->
-        <div class="col-8">
-          <div class="img-banner"></div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main -->
-    <main>
-      <!-- Series -->
-      <div class="container text-white w-100 mb-100">
-        <!-- Tittle section -->
-        <div class="row">
-          <div class="col-12 d-flex justify-content-start">
-            <h2>My series of the month</h2>
-          </div>
-        </div>
-
-        <!-- Carousel -->
-        <div class="row">
-          <div class="col-12">
-            <a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/chernobyl.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/fleabag.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/foundation.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/game of thrones.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/hannibal.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/malcolm in the middle.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/mindhunter.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/mr. Robot.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/rick and morty.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/series/westworld.png" alt="" /></a>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body bg-transparent border-0">
+              <ul class="px-0">
+                <li class="list-without fs-5">Movies and series I've loved this year.</li>
+                <li class="list-without fs-5">Some nearby movie releases that I am looking forward to with joy.</li>
+                <li class="list-without fs-5">A selection of my favorite movie directors.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </header>
 
-      <!-- Movies -->
-      <div class="container text-white w-100">
-        <!-- Tittle section -->
-        <div class="row">
-          <div class="col-12 d-flex justify-content-start">
-            <h2>My movies of the month</h2>
+  <!-- Main -->
+  <main>
+    <!-- Banner -->
+    <div class="container mb-100">
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Item 1 -->
+          <div class="carousel-item active">
+            <a href="https://www.imdb.com/title/tt22687790/?ref_=wl_li_tt"><img src="media/carousel/haunting.jpg"
+                class="d-block w-100 rounded-3" alt="haunting"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2">A Haunting in Venice</h5>
+              <p>In post-World War II Venice, Poirot, now retired and living in his own exile, reluctantly attends a
+                seance. But when one of the guests is murdered, it is up to the former detective to once again uncover
+                the killer.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="carousel-item">
+            <a href="https://www.imdb.com/title/tt15239678/?ref_=wl_li_tt"><img src="media/carousel/dune-part-two.jpg"
+                class="d-block w-100 rounded-3" alt="dune2"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2">Dune: Part Two</h5>
+              <p>Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who
+                destroyed his family.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="carousel-item">
+            <a href="https://www.imdb.com/title/tt11858890/?ref_=tt_mv_close"><img src="media/carousel/the-creator.jpg"
+                class="d-block w-100 rounded-3" alt="creator"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-2">The Creator</h5>
+              <p>Described as a post-apocalyptic thriller involving a future impacted by a war between humans and AI.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+    <!-- Series -->
+    <div class="container text-white mb-100" id="series">
+      <!-- Tittle section -->
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center justify-content-md-start">
+          <h2>My series of the month</h2>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="row d-flex flex-wrap w-100 mt-5">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/chernobyl.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/fleabag.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/foundation.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/game of thrones.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/hannibal.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/malcolm in the middle.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/mindhunter.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/mr. Robot.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/rick and morty.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/westworld.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/the witcher.png" alt="" /></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/love death robots.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movies -->
+    <div class="container text-white mb-100" id="movies">
+      <!-- Tittle section -->
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center justify-content-md-start">
+          <h2>My movies of the month</h2>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div class="row d-flex flex-wrap w-100 mt-5">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/1917.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/another round.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/evil dead rise.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/godzilla king of the monsters.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/her.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/hereditary.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/interstellar.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/john wick.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/prometheus.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/world war z.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/arrival.png" alt="" /></a></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+              src="media/movies/the lord of the rings the return of the king.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Popular genres -->
+  <div class="container mb-100 text-white">
+    <!-- Tittle section -->
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center justify-content-md-start">
+        <h2>Popular Genres</h2>
+      </div>
+    </div>
+    
+    <!-- Carousel wrapper -->
+    <div id="carouselMultiItemExample" class="carousel slide carousel-light text-center" data-mdb-ride="carousel">
+      <!-- Controls -->
+      <div class="d-flex justify-content-center mb-4">
+        <button class="carousel-control-prev position-relative" type="button"
+          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next position-relative" type="button"
+          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Inner -->
+      <div class="carousel-inner py-4">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp" class="card-img-top"
+                    alt="Waterfall" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top"
+                    alt="Sunset Over the Sea" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp" class="card-img-top"
+                    alt="Sunset over the Sea" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Carousel -->
-        <div class="row">
-          <div class="col-12">
-            <a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/1917.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/another round.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/evil dead rise.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/godzilla king of the monsters.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/her.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/hereditary.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/interstellar.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/john wick.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/prometheus.png" alt="" /></a
-            ><a href="#"><img class="w-18-h350 m-2 img-bandw-r" src="media/movies/world war z.png" alt="" /></a>
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top"
+                    alt="Fissure in Sandstone" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp" class="card-img-top"
+                    alt="Storm Clouds" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp" class="card-img-top"
+                    alt="Hot Air Balloons" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp" class="card-img-top"
+                    alt="Peaks Against the Starry Sky" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp" class="card-img-top"
+                    alt="Bridge Over Water" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                <div class="card">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp" class="card-img-top"
+                    alt="Purbeck Heritage Coast" />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up the bulk
+                      of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+      <!-- Inner -->
+    </div>
+    <!-- Carousel wrapper -->
 
-    <!-- Script bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.js"></script>
-  </body>
+  </div>
+  
+  </main>
+
+
+
+  <!-- Script bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
 </html>
