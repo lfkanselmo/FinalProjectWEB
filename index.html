@@ -81,7 +81,7 @@
   <!-- Main -->
   <main>
     <!-- Banner -->
-    <div class="container mb-100">
+    <div class="container mb-100 d-flex flex-column align-items-center justify-content-center">
       <!-- Carousel -->
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -91,37 +91,70 @@
             aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+            aria-label="Slide 3"></button>            
         </div>
         <div class="carousel-inner">
           <!-- Item 1 -->
           <div class="carousel-item active">
-            <a href="https://www.imdb.com/title/tt22687790/?ref_=wl_li_tt"><img src="media/carousel/haunting.jpg"
+            <a href="https://www.imdb.com/title/tt22687790/?ref_=wl_li_tt"><img class="opacity-50" src="media/carousel/haunting.jpg"
                 class="d-block w-100 rounded-3" alt="haunting"></a>
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="fs-2">A Haunting in Venice</h5>
-              <p>In post-World War II Venice, Poirot, now retired and living in his own exile, reluctantly attends a
+              <h5 class="fs-1 text-warning">A Haunting in Venice(2023)</h5>
+              <p class="fs-5">In post-World War II Venice, Poirot, now retired and living in his own exile, reluctantly attends a
                 seance. But when one of the guests is murdered, it is up to the former detective to once again uncover
                 the killer.</p>
             </div>
           </div>
           <!-- Item 2 -->
           <div class="carousel-item">
-            <a href="https://www.imdb.com/title/tt15239678/?ref_=wl_li_tt"><img src="media/carousel/dune-part-two.jpg"
+            <a href="https://www.imdb.com/title/tt15239678/?ref_=wl_li_tt"><img class="opacity-50" src="media/carousel/dune-part-two.jpg"
                 class="d-block w-100 rounded-3" alt="dune2"></a>
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="fs-2">Dune: Part Two</h5>
-              <p>Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who
+              <h5 class="fs-1 text-warning">Dune: Part Two(2024)</h5>
+              <p class="fs-5">Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who
                 destroyed his family.</p>
             </div>
           </div>
           <!-- Item 3 -->
           <div class="carousel-item">
-            <a href="https://www.imdb.com/title/tt11858890/?ref_=tt_mv_close"><img src="media/carousel/the-creator.jpg"
+            <a href="https://www.imdb.com/title/tt11858890/?ref_=tt_mv_close"><img class="opacity-50" src="media/carousel/the-creator.jpg"
                 class="d-block w-100 rounded-3" alt="creator"></a>
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="fs-2">The Creator</h5>
-              <p>Described as a post-apocalyptic thriller involving a future impacted by a war between humans and AI.
+              <h5 class="fs-1 text-warning">The Creator(2023)</h5>
+              <p class="fs-5">Described as a post-apocalyptic thriller involving a future impacted by a war between humans and AI.
               </p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="carousel-item">
+            <a href="https://www.imdb.com/title/tt13287846/?ref_=wl_li_tt"><img class="opacity-50" src="media/carousel/napoleon.jpg"
+                class="d-block w-100 rounded-3" alt="napoleon"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 text-warning">Napoleon(2023)</h5>
+              <p class="fs-5">The film takes a personal look at Napoleon Bonaparte's origins, and his swift, ruthless climb to emperor viewed through the prism of his addictive, and often volatile, relationship with his wife and one true love, Josephine.</p>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="carousel-item">
+            <a href="https://www.imdb.com/title/tt14230458/?ref_=wl_li_tt"><img class="opacity-50" src="media/carousel/poor-thing.png"
+                class="d-block w-100 rounded-3" alt="poor-things"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 text-warning">Poor Things(2023)</h5>
+              <p class="fs-5">The incredible tale about the fantastical evolution of Bella Baxter, a young woman brought back to life by the brilliant and unorthodox scientist Dr. Godwin Baxter.</p>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="carousel-item">
+            <a href="https://www.imdb.com/title/tt14998742/?ref_=wl_li_tt"><img class="opacity-50" src="media/carousel/rebel-moon.jpg"
+                class="d-block w-100 rounded-3" alt="rebel-moon"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="fs-1 text-warning">Rebel Moon(2023)</h5>
+              <p class="fs-5">When a peaceful settlement on the edge of a distant moon finds itself threatened by the armies of a tyrannical ruling force, a mysterious stranger living among its villagers becomes their best hope for survival.</p>
             </div>
           </div>
         </div>
@@ -139,9 +172,16 @@
     </div>
 
     <!--Quotes -->
-    <div class="container text-white mb-100 justify-content-center" id="quotes">
-      <!--Carousel -->
+    <div class="container text-white mb-100 d-flex flex-column align-items-center justify-content-center" id="quotes">
+      <!-- Tittle section -->
       <div class="row">
+        <div class="col-12 d-flex justify-content-center justify-content-md-start">
+          <h2 class="text-warning">Famous phrases</h2>
+        </div>
+      </div>
+
+      <!--Carousel -->
+      <div class="row w-100 mt-5">
         <div class="col-12">
           <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -205,25 +245,18 @@
                 </figure>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            
           </div>
         </div>
       </div>
     </div>
 
     <!-- Series -->
-    <div class="container text-white mb-100 justify-content-center" id="series">
+    <div class="container text-white mb-100 d-flex flex-column align-items-center justify-content-center" id="series">
       <!-- Tittle section -->
       <div class="row">
         <div class="col-12 d-flex justify-content-center justify-content-md-start">
-          <h2>My series of the month</h2>
+          <h2 class="text-warning">My series of the month</h2>
         </div>
       </div>
 
@@ -231,91 +264,91 @@
       <div class="row d-flex flex-wrap w-100 mt-5">
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/chernobyl.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/chernobyl"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/chernobyl.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/fleabag.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/fleabag"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/fleabag.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/foundation.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/foundation"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/foundation.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/game of thrones.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/juego-de-tronos"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/game of thrones.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/hannibal.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/hannibal"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/hannibal.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/malcolm in the middle.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/malcolm-el-de-en-medio"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/malcolm in the middle.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/mindhunter.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/mindhunter"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/mindhunter.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/mr. Robot.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/mr-robot"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/mr. Robot.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/rick and morty.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/rick-y-morty"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/rick and morty.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/westworld.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/westworld"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/westworld.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/the witcher.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/the-witcher"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/the witcher.png" alt="" /></a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/love death robots.png" alt="" /></a>
+          <a href="https://www.justwatch.com/co/serie/love-death-robots"><img class="w-18-h350 m-3 img-bandw-r" src="media/series/love death robots.png" alt="" /></a>
         </div>
       </div>
     </div>
 
     <!-- Movies -->
-    <div class="container text-white mb-100 justify-content-center" id="movies">
+    <div class="container text-white mb-100 d-flex flex-column align-items-center justify-content-center" id="movies">
       <!-- Tittle section -->
       <div class="row">
         <div class="col-12 d-flex justify-content-center justify-content-md-start">
-          <h2>My movies of the month</h2>
+          <h2 class="text-warning">My movies of the month</h2>
         </div>
       </div>
 
       <!-- Carousel -->
       <div class="row d-flex flex-wrap w-100 mt-5">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt8579674/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_1917"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/1917.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt10288566/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_another%2520ro"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/another round.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt13345606/?ref_=nv_sr_srsg_0_tt_6_nm_1_q_evil%2520dead%2520rise"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/evil dead rise.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt3741700/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_godzilla%2520kin"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/godzilla king of the monsters.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt1798709/?ref_=nv_sr_srsg_0_tt_5_nm_3_q_her"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/her.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt7784604/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_hereditary"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/hereditary.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt0816692/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_interstell"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/interstellar.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt2911666/?ref_=nv_sr_srsg_5_tt_6_nm_0_q_john%2520wi"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/john wick.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt1446714/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_promete"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/prometheus.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt0816711/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_world%2520war%2520z"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/world war z.png" alt="" /></a></div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"><a href="https://www.imdb.com/title/tt2543164/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_arrival"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/arrival.png" alt="" /></a></div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center">
-          <a href="#"><img class="w-18-h350 m-3 img-bandw-r"
+          <a href="https://www.imdb.com/title/tt0167260/?ref_=nv_sr_srsg_6_tt_7_nm_1_q_lord%2520of%2520the%2520rings%2520"><img class="w-18-h350 m-3 img-bandw-r"
               src="media/movies/the lord of the rings the return of the king.png" alt="" /></a>
         </div>
       </div>
     </div>
 
     <!-- Popular directors -->
-    <div class="container mb-100 text-white justify-content-center" id="directors">
+    <div class="container mb-100 text-white d-flex flex-column align-items-center justify-content-center" id="directors">
 
       <!-- Tittle section -->
       <div class="row">
         <div class="col-12 d-flex justify-content-center justify-content-md-start">
-          <h2>Popular directors</h2>
+          <h2 class="text-warning">Popular directors</h2>
         </div>
       </div>
       
@@ -460,11 +493,11 @@
     </div>
 
     <!-- Actors & Actresses -->
-    <div class="container mb-100 text-white justify-content-center" id="actors">
+    <div class="container mb-100 text-white d-flex flex-column align-items-center justify-content-center" id="actors">
       <!-- Tittle section -->
       <div class="row">
         <div class="col-12 d-flex justify-content-center justify-content-md-start">
-          <h2>My favorite actors & actresses</h2>
+          <h2 class="text-warning">My favorite actors & actresses</h2>
         </div>
       </div>
 
@@ -472,7 +505,7 @@
       <div class="row d-flex flex-wrap w-100 mt-5">
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card bgr-black text-white text-center" style="width: 18rem;">
-            <img src="media/actors/Cate_Blanchett.jpg" class="card-img-top" alt="cate-blanchett">
+            <img src="media/actors/Cate_Blanchett.jpg" class="card-img-top opa-100" alt="cate-blanchett">
             <div class="card-body">
               <h5 class="card-title text-warning">Cate Blanchett</h5>
 
@@ -483,7 +516,7 @@
 
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card bgr-black text-white text-center" style="width: 18rem;">
-            <img src="media/actors/Meryl_Streep.jpg" class="card-img-top" alt="meryl-streep">
+            <img src="media/actors/Meryl_Streep.jpg" class="card-img-top opa-100" alt="meryl-streep">
             <div class="card-body">
               <h5 class="card-title text-warning">Meryl Streep</h5>
 
@@ -494,7 +527,7 @@
 
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card bgr-black text-white text-center" style="width: 18rem;">
-            <img src="media/actors/tilda swinton.jpg" class="card-img-top" alt="tilda-swinton">
+            <img src="media/actors/tilda swinton.jpg" class="card-img-top opa-100" alt="tilda-swinton">
             <div class="card-body">
               <h5 class="card-title text-warning">Tilda Swinton</h5>
 
@@ -505,7 +538,7 @@
 
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card bgr-black text-white text-center" style="width: 18rem;">
-            <img src="media/actors/gary_oldman.jpg" class="card-img-top" alt="gary-oldman">
+            <img src="media/actors/gary_oldman.jpg" class="card-img-top opa-100" alt="gary-oldman">
             <div class="card-body">
               <h5 class="card-title text-warning">Gary Oldman</h5>
 
@@ -516,7 +549,7 @@
 
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card bgr-black text-white text-center" style="width: 18rem;">
-            <img src="media/actors/Joaquin_Phoenix.jpg" class="card-img-top" alt="joaquin-phoenix">
+            <img src="media/actors/Joaquin_Phoenix.jpg" class="card-img-top opa-100" alt="joaquin-phoenix">
             <div class="card-body">
               <h5 class="card-title text-warning">Joaquin Phoenix</h5>
 
@@ -527,7 +560,7 @@
 
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card bgr-black text-white text-center" style="width: 18rem;">
-            <img src="media/actors/Mads_Mikkelsen.jpg" class="card-img-top" alt="mads-mikkelsen">
+            <img src="media/actors/Mads_Mikkelsen.jpg" class="card-img-top opa-100" alt="mads-mikkelsen">
             <div class="card-body">
               <h5 class="card-title text-warning">Mads Mikkelsen</h5>
 
@@ -545,17 +578,17 @@
 
   <!--footer-->
   <footer class="footer bgr-grey text-white">
-    <div class="container justify-content-center">
-      <div class="row d-flex flex-column flex-sm-row align-items-center flex-wrap w-100">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+      <div class="row d-flex flex-column flex-sm-row justify-content-start align-items-center flex-wrap w-100">
         <!--Logo -->
-        <div class="col-12 col-sm-3 my-5 d-flex flex-column align-items-center justify-content-center my-3">
+        <div class="col-12 col-md-12 col-lg-3 my-5 text-left d-flex flex-column align-items-center justify-content-center my-3">
           <a href="#" class="col-auto">
             <img class="img-logo" src="media/logo/white-logo.png" alt="logo" />
           </a>
         </div>
 
         <!-- Social Networks-->
-        <div class="col-12 col-sm-3 d-flex flex-column justify-content-center my-3 align-items-center">
+        <div class="col-12 col-md-4 col-lg-3 text-left d-flex flex-column justify-content-start my-3 align-items-center align-items-md-start">
           <h5 class="text-warning">Social Networks</h5>
           <!--link 1 -->
           <a class="icon-link icon-link-hover text-reset my-0" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://letterboxd.com/Krausser/">
@@ -583,9 +616,9 @@
         </div>
 
         <!-- film platforms-->
-        <div class="col-12 col-sm-3 d-flex flex-column justify-content-center my-3 align-items-center">
+        <div class="col-12 col-md-4 col-lg-3 d-flex flex-column justify-content-start my-3 align-items-center align-items-md-start">
           <h5 class="text-warning">Film plataforms</h5>
-          <p>Extracted from: </p>
+          <p class="my-0">Extracted from: </p>
           <!--link 1 -->
           <a class="icon-link icon-link-hover text-reset my-0" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.imdb.com/">
             <img class="siz-icon" src="media/footer/imdb.png" alt="">
@@ -606,15 +639,23 @@
         </div>
 
         <!--Contact -->
-        <div class="col-12 col-sm-3 d-flex flex-column justify-content-center my-3 align-items-center">
+        <div class="col-12 col-md-4 col-lg-3 d-flex flex-column justify-content-start my-3 align-items-center align-items-md-start">
           <h5 class="text-warning">Contact</h5>
-          <p>Tel: +57 311-111-1111</p>
-          <p>Email: example@dominio.com</p>
-          <p>Address: Cine Street Nº 34</p>
+          <p class="my-0">+57 311-111-1111</p>
+          <p class="my-0">example@dominio.com</p>
+          <p class="my-0">Medellín, Colombia</p>
+          <p class="my-0">Cine Street Nº 34</p>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-12">
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+             <p>© 2023 Copyright <span class="fw-bold">Website created for academic purposes by Anselmo Ortega</span></p>            
+          </div>
         </div>
       </div>
     </div>
-
   </footer>
 
 
