@@ -1,5 +1,6 @@
 :root{
     --black-background: rgba(0,0,0,1);
+    --grey-background:rgb(16, 16, 16);
 }
 
 @font-face{
@@ -15,11 +16,24 @@ a{
     background-image: url(../media/header/bgr-header.png)   ;
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 700px;
 }
+
+/*Colors*/
 
 .bgr-black{
     background-color: var(--black-background)!important;
+}
+
+.bgr-grey{
+    background-color: var(--grey-background)!important;
+}
+
+
+/*icons*/
+.siz-icon{
+    width: 20px;
+    height: 20px;
 }
 
 /*logo*/
@@ -67,3 +81,4 @@ a{
 .list-without{
     list-style: none;
 }
+
